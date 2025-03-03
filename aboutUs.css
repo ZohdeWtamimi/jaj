@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+.header {
+  background-color: #3d47e8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.navbar {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  margin: 0;
+  color: #fff;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.about-us-title {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+.nav-item a:hover {
+  color: #000;
+}
+
+.about-us {
+  position: relative;
+  height: 50vh;
+  background-image: url("assets/poultry.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.about-us-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.about-us p,
+.about-health p {
+  font-size: 1.2em;
+  max-width: 800px;
+}
+
+.about-promises {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.promises-list {
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.promise-item {
+  flex: 1 1 200px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.promise-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.promise-item strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #3d47e8;
+}
+
+.footer {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .nav-item {
+    font-size: 14px;
+  }
+  .about-us-title {
+    font-size: 2rem;
+  }
+}
