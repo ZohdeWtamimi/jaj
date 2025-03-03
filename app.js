@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = document.querySelectorAll(".nav-item a");
+  const mainPage = document.querySelector("#mainPage");
+  const aboutUsPage = document.querySelector("#aboutUsPage");
   const currentPath = window.location.pathname;
 
   navLinks.forEach((link) => {
-    console.log(link.getAttribute("href"));
-    console.log(currentPath);
-    if (link.getAttribute("href") === currentPath) {
-      link.style.color = "#000";
+    link.classList.remove("active");
+    if (currentPath.includes("aboutUs")) {
+      aboutUsPage.classList.add("active");
+    } else {
+      mainPage.classList.add("active");
     }
   });
 });
